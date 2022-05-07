@@ -7,7 +7,7 @@
     <div
       class="w-full flex-row justify-end items-center pr-4 flex text-sm text-caribbeanGreen"
     >
-      <a>{{ '      ' }}Read more</a>
+      <NuxtLink :to="`/${title}`">{{ '      ' }}Read more</NuxtLink>
     </div>
   </div>
 </template>

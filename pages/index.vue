@@ -1,11 +1,5 @@
 <template>
-  <!-- <div>
-    <h1>{{ person.fields.name }}</h1>
-    <ul>
-      <li v-for="(post, key) in posts" :key="key">{{ post.fields.title }}</li>
-    </ul>
-  </div> -->
-  <PostLadder :posts="posts"/>
+  <PostLadder :posts="posts" />
 </template>
 
 <script lang="ts">

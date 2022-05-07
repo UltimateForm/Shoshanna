@@ -32,20 +32,21 @@ export default {
   },
   methods: {
     onMouseEnter(event) {
-      this.isActive = true;
+      this.isActive = true
     },
     onMouseLeave(event) {
-      this.isActive = false;
+      this.isActive = false
     },
     onMouseClick(event) {
-      this.isActive = !this.isActive;
-    }
+      this.isActive = !this.isActive
+    },
   },
 }
 </script>
 
 <style scoped>
 button {
+  -webkit-tap-highlight-color: transparent;
   width: 64px;
   height: 64px;
   position: absolute;
@@ -89,9 +90,6 @@ button.active > .protectiveFilm {
   width: 128px;
   height: 128px;
 }
-button > .buttonArea:hover {
-  transform: rotate(360deg);
-}
 
 button li {
   position: absolute;
@@ -132,9 +130,18 @@ button li .about {
 button.active li {
   transform: rotate(calc(145deg / 3 * var(--i)));
 }
-button.active li div:hover {
-  transform: rotate(calc(145deg / -3 * var(--i))) scale(1.15);
+button.active > .buttonArea {
+  transform: rotate(360deg);
 }
+@media (min-width: 640px) {
+  button.active li div:hover {
+    transform: rotate(calc(145deg / -3 * var(--i))) scale(1.15);
+  }
+  button > .buttonArea:hover {
+    transform: rotate(360deg);
+  }
+}
+
 button.active li div {
   left: -32px;
   transform: rotate(calc(145deg / -3 * var(--i)));

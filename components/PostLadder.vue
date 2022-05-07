@@ -28,8 +28,6 @@
 </template>
 
 <script>
-import { IBlogPost } from '../types/contentful'
-
 export default {
   props: {
     posts: Array,
