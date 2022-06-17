@@ -91,3 +91,4 @@ sw.*
 
 # custom added
 .contentful.json
+*:Zone.Identifier

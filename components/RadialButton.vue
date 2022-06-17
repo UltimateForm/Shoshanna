@@ -32,13 +32,19 @@ export default {
   },
   methods: {
     onMouseEnter(event) {
-      this.isActive = true
+      if (window.innerWidth > 640) {
+        this.isActive = true
+      }
     },
     onMouseLeave(event) {
-      this.isActive = false
+      if (window.innerWidth > 640) {
+        this.isActive = false
+      }
     },
     onMouseClick(event) {
+      console.log('Before click', this.isActive)
       this.isActive = !this.isActive
+      console.log('CLICK??', this.isActive)
     },
   },
 }
