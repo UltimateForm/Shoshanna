@@ -1,4 +1,4 @@
-import ctfConfig from "./.contentful.json";
+import ctfConfig from './.contentful.json'
 
 export default {
   env: {
@@ -16,9 +16,7 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico', }
-    ],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
@@ -34,7 +32,7 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/google-fonts'
+    '@nuxtjs/google-fonts',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -62,8 +60,8 @@ export default {
     preconnect: true,
     download: true,
     families: {
-      Sen: true
-    }
+      Sen: true,
+    },
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},

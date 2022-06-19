@@ -36,15 +36,21 @@
 export default {}
 </script>
 
-<style>
+<style scoped>
 #mainContent {
-	opacity: 1;
-  transition: 0.5s;
+  transition: all 0.5s;
 }
-.home-enter-active #mainContent {
+
+.post-enter-active #mainContent {
   opacity: 0;
 }
-.home-leave-active #mainContent {
+
+.post-enter-to #mainContent {
+  opacity: 1;
+}
+
+.home-leave-active,
+.home-leave-to #mainContent {
   opacity: 0;
 }
 </style>

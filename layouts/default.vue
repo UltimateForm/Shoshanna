@@ -4,3 +4,10 @@
     <RadialButton />
   </div>
 </template>
+
+<script>
+export default {
+  name: 'DefaultLayout',
+  layout: 'default',
+}
+</script>

@@ -31,17 +31,17 @@ export default {
     return { isActive: false }
   },
   methods: {
-    onMouseEnter(event) {
+    onMouseEnter(_event) {
       if (window.innerWidth > 640) {
         this.isActive = true
       }
     },
-    onMouseLeave(event) {
+    onMouseLeave(_event) {
       if (window.innerWidth > 640) {
         this.isActive = false
       }
     },
-    onMouseClick(event) {
+    onMouseClick(_event) {
       console.log('Before click', this.isActive)
       this.isActive = !this.isActive
       console.log('CLICK??', this.isActive)

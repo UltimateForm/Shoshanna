@@ -1,4 +1,5 @@
 module.exports = {
+  ignorePatterns: ['temp.js', '**/vendor/*.js', '**/types/contentful.ts'],
   root: true,
   env: {
     browser: true,

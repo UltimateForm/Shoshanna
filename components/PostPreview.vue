@@ -10,27 +10,27 @@
     <div
       class="w-full flex-row justify-end items-center pr-4 flex text-sm text-caribbeanGreen"
     >
-      <NuxtLink @click.native="onClick" :to="'/'"
-        >{{ '      ' }}Read more</NuxtLink
-      >
-      <!-- <NuxtLink @click.native="onClick" :to="`/${title}`"
+      <!-- <NuxtLink @click.native="onClick" :to="'/'"
         >{{ '      ' }}Read more</NuxtLink
       > -->
+      <NuxtLink :to="`/${title}`" @click.native="onClick"
+        >{{ '      ' }}Read more</NuxtLink
+      >
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return { selected: false }
-  },
   props: {
     title: String,
     lead: String,
   },
+  data() {
+    return { selected: false }
+  },
   methods: {
-    onClick(event) {
+    onClick(_event) {
       this.selected = true
     },
   },
@@ -38,14 +38,6 @@ export default {
 </script>
 
 <style scoped>
-#container {
-  transition: all 5s;
-}
-#container.isSelected {
-  position: absolute;
-  top:0
-}
-
 a {
   text-decoration-line: underline;
   white-space: pre;

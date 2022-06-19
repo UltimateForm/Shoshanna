@@ -9,7 +9,11 @@ import { createClient } from '~/plugins/contentful'
 const client = createClient()
 
 export default Vue.extend({
-  name: 'Home',
+  name: 'HomePage',
+  transition: {
+    name: 'home',
+    duration: 500,
+  },
   async asyncData(context) {
     const { env } = context
     try {
