@@ -1,8 +1,11 @@
 <template>
-  <PostLadder :posts="posts" />
+  <div class="w-full max-h-screen">
+    <PostLadder :posts="posts" />
+    <SidePanel :posts="posts" />
+  </div>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from 'vue'
 import { createClient } from '~/plugins/contentful'
 
