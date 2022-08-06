@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full max-h-screen">
+  <div class="w-full max-h-screen h-screen overflow-hidden">
     <PostLadder :posts="posts" />
     <SidePanel :posts="posts" />
   </div>

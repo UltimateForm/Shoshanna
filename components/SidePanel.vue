@@ -1,8 +1,7 @@
 <template>
-  <div
-    class="absolute top-0 right-0 panel w-1/5 h-screen"
-  >
-    hello {{  }}
+  <div class="hidden absolute top-0 right-0 panel h-screen w-29.6% md:flex flex-row max-w-md">
+    <div class="h-96% max-w-0 border-l border-caribbeanGreen " />
+    hello {{}}
   </div>
 </template>
 

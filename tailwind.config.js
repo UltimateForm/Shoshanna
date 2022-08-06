@@ -9,6 +9,16 @@ module.exports = {
         caribbeanGreen: '#00C897',
         violetPink: '#FF5CF4',
       },
+      width: {
+        "29.6%": "29.6%",
+        "1/5": "20%"
+      },
+      height: {
+        "96%":"96%"
+      },
+      spacing: {
+        "1/5": "20%"
+      }
     },
     fontFamily: {
       sen: ['Sen', 'sans-serif'],

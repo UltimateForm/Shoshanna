@@ -3,7 +3,7 @@
     <div
       class="hidden absolute w-full h-full top-0 left-0 bg-filter md:block z-10"
     />
-    <div class="flex flex-col gap-4 pr-40 pb-4 z-20 relative">
+    <div class="flex flex-col gap-4 md:pr-40 pl-2 pb-4 z-20 relative">
       <h1 class="text-xl font-bold">{{ title }}</h1>
       <p class="text-sm md:text-lg">
         {{ lead }}

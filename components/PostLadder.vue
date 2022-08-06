@@ -1,5 +1,5 @@
 <template>
-  <div id="container" class="p-4 flex gap-9 flex-col md:text-lg h-scre">
+  <div id="container" class="p-4 flex gap-9 flex-col md:text-lg h-full max-h-full overflow-y-scroll">
     <PostPreview
       :title="'Lorem Ipsum'"
       :lead="'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '"
