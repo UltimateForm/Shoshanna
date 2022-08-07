@@ -61,7 +61,7 @@ button {
   place-items: center;
   right: 16px;
   bottom: 36px;
-  position: fixed;
+  position: absolute;
   @apply shadow;
 }
 

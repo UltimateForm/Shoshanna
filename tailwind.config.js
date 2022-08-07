@@ -14,7 +14,8 @@ module.exports = {
         "1/5": "20%"
       },
       height: {
-        "96%":"96%"
+        "96%": "96%",
+        "fit": "fit-content"
       },
       spacing: {
         "1/5": "20%"
