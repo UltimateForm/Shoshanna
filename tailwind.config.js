@@ -18,7 +18,8 @@ module.exports = {
         "fit": "fit-content"
       },
       spacing: {
-        "1/5": "20%"
+        "1/5": "20%",
+        "1/10": "10%"
       }
     },
     fontFamily: {
